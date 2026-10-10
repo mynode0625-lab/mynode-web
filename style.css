@@ -171,3 +171,8 @@ footer .logo-mynode{height:15px;margin-bottom:10px}
 .service-text{background:var(--card);border-radius:20px;padding:28px;margin-top:24px}
 .service-text h3{font-size:22px;margin-bottom:8px}
 .service-text p{color:var(--sub);margin:0 0 20px}
+
+/* 메일 주소 복사 버튼 */
+.copy{font:inherit;font-size:13px;font-weight:700;color:var(--tint);background:var(--tint-soft);border:0;border-radius:99px;padding:4px 12px;margin-left:6px;cursor:pointer;vertical-align:1px}
+.copy.done{background:var(--tint);color:#fff}
+.btns .copy{font-size:15px;padding:13px 20px;border-radius:14px;margin-left:0}
