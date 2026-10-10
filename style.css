@@ -172,7 +172,11 @@ footer .logo-mynode{height:15px;margin-bottom:10px}
 .service-text h3{font-size:22px;margin-bottom:8px}
 .service-text p{color:var(--sub);margin:0 0 20px}
 
-/* 메일 주소 복사 버튼 */
-.copy{font:inherit;font-size:13px;font-weight:700;color:var(--tint);background:var(--tint-soft);border:0;border-radius:99px;padding:4px 12px;margin-left:6px;cursor:pointer;vertical-align:1px}
-.copy.done{background:var(--tint);color:#fff}
-.btns .copy{font-size:15px;padding:13px 20px;border-radius:14px;margin-left:0}
+/* 메일 주소 복사 버튼 (아이콘) */
+.copy{display:inline-grid;place-items:center;width:28px;height:28px;padding:0;margin-left:4px;border:0;border-radius:8px;background:transparent;color:var(--sub);cursor:pointer;vertical-align:-8px;position:relative;transition:background .15s,color .15s}
+.copy:hover{background:var(--tint-soft);color:var(--tint)}
+.copy svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.copy.done{color:var(--tint)}
+.copy.done::after{content:"복사됨";position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:var(--text);color:var(--bg);font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;white-space:nowrap}
+.btns .copy{width:46px;height:46px;border-radius:14px;border:1px solid var(--line);vertical-align:0}
+.btns .copy svg{width:20px;height:20px}

@@ -1,17 +1,18 @@
 // 메일 주소 복사 버튼. 외부로 아무것도 보내지 않는다.
+const CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
 document.addEventListener('click', async (e) => {
   const b = e.target.closest('[data-copy]');
   if (!b) return;
-  const text = b.dataset.copy;
   try {
-    await navigator.clipboard.writeText(text);
+    await navigator.clipboard.writeText(b.dataset.copy);
   } catch {
     const t = document.createElement('textarea');
-    t.value = text; document.body.appendChild(t); t.select();
+    t.value = b.dataset.copy; document.body.appendChild(t); t.select();
     document.execCommand('copy'); t.remove();
   }
-  const label = b.textContent;
-  b.textContent = '복사했어요 ✓';
+  if (b.classList.contains('done')) return;
+  const icon = b.innerHTML;
+  b.innerHTML = CHECK;
   b.classList.add('done');
-  setTimeout(() => { b.textContent = label; b.classList.remove('done'); }, 1600);
+  setTimeout(() => { b.innerHTML = icon; b.classList.remove('done'); }, 1500);
 });
