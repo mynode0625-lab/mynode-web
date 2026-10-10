@@ -153,3 +153,21 @@ footer .logo-mynode{height:15px;margin-bottom:10px}
 .screen p{color:#1F1B16;margin:0}
 .screen{text-align:left}
 .streak,.lock,.mbtn,.app-head{text-align:center}
+
+/* 글 중심 레이아웃 (2026-10-10: 이미지 제거) */
+.narrow{max-width:760px}
+.hero-plain{padding:96px 0 80px}
+@media (max-width:760px){.hero-plain{padding:64px 0 56px}}
+.text-steps{list-style:none;counter-reset:s;padding:0;margin:32px 0 0}
+.text-steps li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;column-gap:8px;padding:18px 0;border-top:1px solid var(--line)}
+.text-steps li::before{content:counter(s);grid-row:span 2;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--tint);color:#fff;font-weight:800;font-size:14px}
+.text-steps b{font-size:17px}
+.text-steps span{color:var(--sub)}
+.quote{font-family:var(--serif);font-size:clamp(20px,3vw,24px);margin:20px 0 0;padding:4px 0 4px 20px;border-left:3px solid var(--tint);line-height:1.6}
+.text-features{display:grid;gap:0;margin-top:24px}
+.text-features div{padding:18px 0;border-top:1px solid var(--line)}
+.text-features h3{font-size:17px;margin-bottom:4px}
+.text-features p{margin:0;color:var(--sub)}
+.service-text{background:var(--card);border-radius:20px;padding:28px;margin-top:24px}
+.service-text h3{font-size:22px;margin-bottom:8px}
+.service-text p{color:var(--sub);margin:0 0 20px}
