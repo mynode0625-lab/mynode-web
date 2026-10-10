@@ -12,7 +12,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7;word-break:keep-all;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--tint)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 
