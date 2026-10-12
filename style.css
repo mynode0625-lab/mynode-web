@@ -188,3 +188,7 @@ footer .logo-mynode{height:15px;margin-bottom:10px}
 .mail.chip .copy svg{width:13px;height:13px;stroke-width:2.2}
 .mail.chip .copy:hover{background:var(--tint-soft)}
 .copy.done::after{content:"복사됨";position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--text);color:var(--bg);font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;white-space:nowrap}
+
+/* 인라인 style 대신 쓰는 여백 (CSP style-src 'self') */
+.mt16{margin-top:16px}
+.mt24{margin-top:24px}
