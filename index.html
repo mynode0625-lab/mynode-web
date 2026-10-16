@@ -2,13 +2,25 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>마이노드 Mynode</title>
 <meta name="description" content="주식회사 마이노드는 일상을 돕는 작은 앱을 만듭니다.">
+<meta name="theme-color" content="#DCE8F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1A3D4A" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mynode.co.kr/">
+<meta property="og:site_name" content="mynode.">
 <meta property="og:title" content="mynode. — 일상을 돕는 작은 앱">
+<meta property="og:description" content="주식회사 마이노드는 일상을 돕는 작은 앱을 만듭니다.">
+<meta property="og:image" content="https://mynode.co.kr/assets/og-mynode.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="mynode. — 일상을 돕는 작은 앱을 만듭니다.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/mynode-icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/style.css?v=9">
+<link rel="stylesheet" href="/assets/fonts/pretendard/pretendard.css">
+<link rel="stylesheet" href="/mynode.css?v=1">
 </head>
 <body>
 
@@ -18,40 +30,52 @@
 </div></header>
 
 <main>
-<section class="hero-plain">
-  <div class="wrap narrow">
-    <p class="eyebrow">MYNODE INC.</p>
-    <h1 class="display">일상을 돕는<br>작은 앱을 만듭니다.</h1>
-    <p class="lead">하루의 작은 점들이 이어져 습관이 되도록.<br>매일 손이 가는, 가볍고 조용한 앱을 만들어요.</p>
+<section class="hero">
+  <div class="sky" aria-hidden="true"><span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>mynode.inc / small apps for daily life</p>
+      <h1 class="display">일상을 돕는<br>작은 앱을 만듭니다.</h1>
+      <p class="lead">하루의 작은 점들이 이어져 습관이 되도록.<br>매일 손이 가는, 가볍고 조용한 앱을 만들어요.</p>
+      <div class="btns"><a class="btn" href="#services">마이노드의 앱 보기</a></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 200 150" focusable="false"><path class="edge" d="M25 120 Q70 60 100 90 T175 55"/><circle class="node" cx="25" cy="120" r="6"/><circle class="node" cx="100" cy="90" r="6"/><circle class="glow" cx="175" cy="55" r="15"/><circle class="end" cx="175" cy="55" r="7"/></svg>
+    </div>
   </div>
 </section>
 
-<section id="services" class="alt">
-  <div class="wrap narrow">
+<section id="services">
+  <div class="wrap">
     <p class="eyebrow">SERVICES</p>
     <h2 class="title">마이노드의 앱</h2>
-    <div class="service-text">
-      <h3>하루첫말 <span class="badge">준비 중</span></h3>
-      <p>알람이 울리면 오늘의 목표를 확언 한 줄로 선언하는 아침 알람이에요.<br>선언한 확언은 날짜별 기록으로 쌓이고, 휴대폰 안에만 저장돼요.</p>
-      <a class="btn" href="/daily/">자세히 보기</a>
+    <div class="service">
+      <div class="haru">
+        <img src="/assets/daily-icon.svg" alt="" width="56" height="56">
+        <div>
+          <h3>하루첫말 <span class="badge">준비 중</span></h3>
+          <p>알람이 울리면 오늘의 목표를 확언 한 줄로 선언하는 아침 알람이에요.<br>선언한 확언은 날짜별 기록으로 쌓이고, 휴대폰 안에만 저장돼요.</p>
+          <a class="btn-outline" href="/daily/">자세히 보기</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrap narrow">
+<section class="soft">
+  <div class="wrap">
     <p class="eyebrow">HOW WE BUILD</p>
     <h2 class="title">우리가 앱을 만드는 방식</h2>
-    <div class="text-features">
-      <div><h3>작게</h3><p>한 가지 일을 잘하는 앱. 기능을 늘리기보다 매일 쓰기 쉽게 다듬어요.</p></div>
-      <div><h3>내 기록은 내 기기에</h3><p>꼭 필요하지 않다면 정보를 모으지 않아요. 기록은 사용자의 기기에 남겨요.</p></div>
-      <div><h3>써 보고 결정</h3><p>먼저 작게 내놓고, 실제로 써 본 분들의 반응을 보고 다음을 정해요.</p></div>
+    <div class="principles">
+      <div><span class="num">01</span><h3>작게</h3><p>한 가지 일을 잘하는 앱. 기능을 늘리기보다 매일 쓰기 쉽게 다듬어요.</p></div>
+      <div><span class="num">02</span><h3>조용한 앱</h3><p>사람을 따라다니는 추적 없이 만들어요. 필요하지 않은 정보는 묻지도 모으지도 않아요.</p></div>
+      <div><span class="num">03</span><h3>써 보고 결정</h3><p>먼저 작게 내놓고, 실제로 써 본 분들의 반응을 보고 다음을 정해요.</p></div>
     </div>
   </div>
 </section>
 
-<section id="contact" class="alt">
-  <div class="wrap narrow">
+<section id="contact">
+  <div class="wrap">
     <p class="eyebrow">CONTACT</p>
     <h2 class="title">문의</h2>
     <p class="lead">제휴·제안·기타 문의는 메일로 보내 주세요.</p>
