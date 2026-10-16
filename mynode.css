@@ -1,4 +1,4 @@
-/* 마이노드 홈 전용 스타일 (/). 마이노드 홈 개편 계획안 v1.1 — 테크 + 힐링, 새벽 하늘.
+/* 마이노드 홈 전용 스타일 (/). 마이노드 홈 개편 계획안 v1.2 — 테크 + 힐링, 새벽 하늘. 밝은 모드만 쓴다.
    글꼴은 이 서버에서만 불러온다 (개인정보처리방침 7절). 공통 style.css는 쓰지 않는다
    (style.css는 하루첫말 개인정보처리방침·지원 페이지가 그대로 쓴다). */
 
@@ -13,18 +13,8 @@
   --serif:"AppleMyungjo","Nanum Myeongjo","Noto Serif KR",serif;
   --sans:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
   --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-  color-scheme:light dark;
+  color-scheme:light;
 }
-@media (prefers-color-scheme:dark){:root{
-  --bg:#0E1A1E;--bg-soft:#13252B;--card:#13252B;
-  --hero1:#1A3D4A;--hero2:#24504D;--hero3:#2D5A4F;
-  --text:#F2F6F5;--sub:#B9D3CC;--muted:#93ABA5;--accent:#7CEBCB;
-  --line:#24363B;--badge-bg:#1D3A36;--hover:#1D3A36;
-  --btn:#FFFFFF;--btn-hover:#E4EEEB;--on-btn:#0A0A0A;--btn-split:rgba(0,0,0,.2);
-  --cloud:rgba(124,235,203,.10);
-  --node:#F2F6F5;--edge:#7CEBCB;
-}}
-
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -42,7 +32,6 @@ button{font:inherit}
 .top nav a{margin-left:20px;font-size:14px;color:var(--text);text-decoration:none}
 .top nav a:hover{color:var(--accent)}
 .logo-mynode{height:20px;width:auto;mix-blend-mode:multiply}
-@media (prefers-color-scheme:dark){.logo-mynode{filter:invert(1);mix-blend-mode:screen}}
 
 /* 글자 */
 h1,h2,h3{margin:0}
