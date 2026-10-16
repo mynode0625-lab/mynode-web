@@ -6,7 +6,7 @@
   --bg:#FFFFFF;--bg-soft:#F6FBF9;--card:#FFFFFF;
   --hero1:#DCE8F0;--hero2:#E4F3EE;--hero3:#F6FBF9;
   --text:#0A0A0A;--sub:#3D4A55;--muted:#5E5E5E;--accent:#09694F;
-  --mint:#00B48A;--mint-soft:#7CEBCB;--line:#E5E5E5;
+  --mint:#00B48A;--mint-soft:#7CEBCB;--line:#E5E5E5;--badge-bg:#E3F2EC;--hover:#EAF3EF;
   --btn:#0A0A0A;--btn-hover:#2B2B2B;--on-btn:#FFFFFF;--btn-split:rgba(255,255,255,.35);
   --cloud:rgba(255,255,255,.85);
   --node:#0A0A0A;--edge:#09694F;
@@ -19,7 +19,7 @@
   --bg:#0E1A1E;--bg-soft:#13252B;--card:#13252B;
   --hero1:#1A3D4A;--hero2:#24504D;--hero3:#2D5A4F;
   --text:#F2F6F5;--sub:#B9D3CC;--muted:#93ABA5;--accent:#7CEBCB;
-  --line:#24363B;
+  --line:#24363B;--badge-bg:#1D3A36;--hover:#1D3A36;
   --btn:#FFFFFF;--btn-hover:#E4EEEB;--on-btn:#0A0A0A;--btn-split:rgba(0,0,0,.2);
   --cloud:rgba(124,235,203,.10);
   --node:#F2F6F5;--edge:#7CEBCB;
@@ -59,7 +59,7 @@ h1,h2,h3{margin:0}
 .btn{display:inline-flex;align-items:center;gap:8px;background:var(--btn);color:var(--on-btn);text-decoration:none;padding:13px 24px;border-radius:999px;font-weight:600;font-size:15px;line-height:1}
 .btn:hover{background:var(--btn-hover)}
 .btn-outline{display:inline-flex;align-items:center;padding:11px 20px;border:1px solid currentColor;border-radius:999px;color:inherit;text-decoration:none;font-weight:600;font-size:15px;line-height:1}
-.btn-outline:hover{background:rgba(0,0,0,.05)}
+.btn-outline:hover{background:var(--hover)}
 
 /* 첫 화면: 새벽 하늘 */
 .hero{position:relative;overflow:hidden;padding:88px 0 104px;background:linear-gradient(180deg,var(--hero1) 0%,var(--hero2) 62%,var(--hero3) 100%);isolation:isolate}
@@ -87,15 +87,13 @@ section{padding:88px 0}
 .soft{background:var(--bg-soft)}
 
 /* 마이노드의 앱 */
-.service{max-width:880px;margin-top:28px;border:1px solid var(--line);border-radius:24px;padding:12px;background:var(--card)}
-.haru{display:grid;grid-template-columns:56px 1fr;gap:18px;background:#F7F1E8;color:#1C1B1A;border-radius:16px;padding:28px}
+.service{max-width:880px;margin-top:28px}
+/* 하루첫말 카드: 사이트와 같은 흰 카드 + 가는 선. 하루첫말 색은 앱 아이콘에만 남긴다 */
+.haru{display:grid;grid-template-columns:56px 1fr;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
 .haru img{width:56px;height:56px;border-radius:14px}
-.haru h3{font-size:22px;font-weight:700;line-height:1.35;letter-spacing:-.01em;margin-bottom:8px;color:#1C1B1A}
-.haru p{color:#4A4741;margin:0 0 20px}
-.haru .btn-outline{color:#1C1B1A}
-.haru .btn-outline:hover{background:rgba(28,27,26,.06)}
-.haru :focus-visible{outline-color:#09694F} /* 카드는 두 모드 모두 밝은 크림이라 진한 초록으로 (5.95:1) */
-.badge{display:inline-block;background:#BC5A24;color:#FFFFFF;font-size:12px;font-weight:600;line-height:1.6;padding:2px 10px;border-radius:999px;margin-left:6px;vertical-align:3px}
+.haru h3{font-size:22px;font-weight:700;line-height:1.35;letter-spacing:-.01em;margin-bottom:8px}
+.haru p{color:var(--sub);margin:0 0 20px}
+.badge{display:inline-block;background:var(--badge-bg);color:var(--accent);font-size:12px;font-weight:600;line-height:1.6;padding:2px 10px;border-radius:999px;margin-left:6px;vertical-align:3px}
 @media (max-width:560px){.haru{grid-template-columns:1fr;padding:24px}}
 
 /* 만드는 방식 */
