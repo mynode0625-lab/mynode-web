@@ -1,0 +1,36 @@
+/* 마이노드 필름 카메라(가칭) 수요 검증 랜딩 전용. 외부 리소스 없음. 글꼴은 사이트 /assets 에서만 */
+:root{--bg:#FBF7F0;--paper:#FFFDF9;--ink:#1C1A17;--sub:#5B544B;--accent:#B5562B;--line:#E9E1D4;--chip:#F3EADB;
+--sans:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.top{border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.top a{color:var(--ink);text-decoration:none;font-weight:700;letter-spacing:.08em}
+.top .lang{font-size:14px;font-weight:500;letter-spacing:0;color:var(--sub)}
+.hero{padding:64px 0 40px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--accent);margin:0 0 18px}
+.eyebrow .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:1px}
+h1{font-size:clamp(30px,6vw,44px);line-height:1.3;margin:0 0 20px;letter-spacing:-.01em}
+.lead{color:var(--sub);margin:0 0 32px}
+.film{display:flex;gap:10px;padding:12px;background:#24201B;border-radius:6px;margin:0 0 36px;overflow:hidden}
+.film span{flex:1;aspect-ratio:3/4;border-radius:2px;background:linear-gradient(160deg,#E9C9A0,#C98A5A 55%,#7A4B33)}
+.film span:nth-child(2){background:linear-gradient(160deg,#D8D2B5,#9FA27C 55%,#56603F)}
+.film span:nth-child(3){background:linear-gradient(160deg,#F1D7C4,#D79B86 55%,#8A4E48)}
+.film-note{font-size:13px;color:var(--sub);margin:-26px 0 36px}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;padding:16px 28px;border-radius:999px}
+.btn:hover{background:#3A342D}
+.small{font-size:14px;color:var(--sub);margin:12px 0 0}
+.benefits{padding:24px 0 8px;display:grid;gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 22px 18px}
+.card h2{font-size:19px;margin:0 0 6px}
+.card p{margin:0;color:var(--sub)}
+.card .n{font-family:var(--mono);font-size:12px;color:var(--accent);display:block;margin-bottom:6px}
+.note{background:var(--chip);border-radius:14px;padding:22px;margin:24px 0 40px}
+.note p{margin:0}
+.cta{text-align:center;padding:8px 0 64px}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:13px;color:var(--sub)}
+footer p{margin:4px 0}
