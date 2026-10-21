@@ -80,10 +80,6 @@ h1,h2,h3{line-height:1.3;margin:0;letter-spacing:-.02em}
 .hero-text .display{margin-top:22px}
 .cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-top:36px}
 .cta-note{font-size:14px;color:var(--muted)}
-.sns{display:flex;flex-wrap:wrap;gap:6px 20px;margin:26px 0 0;font-size:14px}
-.sns a{color:var(--sub);text-decoration:none;font-weight:500}
-.sns a::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--olive);margin-right:8px;vertical-align:2px}
-.sns a:hover{color:var(--tint)}
 .hero-art{display:flex;flex-direction:column;align-items:center}
 .art-note{margin:18px 0 0;font-size:12.5px;color:var(--muted)}
 
@@ -216,6 +212,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
 footer nav a{color:var(--muted);margin-right:14px;text-decoration:none}
 footer nav a:hover{color:var(--tint)}
 footer a{color:var(--muted)}
+.foot-side{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.foot-side nav a:last-child{margin-right:0}
+.foot-sns{display:flex;gap:6px;margin:0 -10px 0 0}
+.foot-sns a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;color:var(--sub)}
+.foot-sns a:hover{color:var(--tint);background:var(--line)}
+.foot-sns svg{width:20px;height:20px;fill:currentColor}
 .logo-mynode{height:15px;width:auto;margin-bottom:10px;mix-blend-mode:multiply}
 @media (prefers-color-scheme:dark){.logo-mynode{filter:invert(1);mix-blend-mode:screen}}
 
@@ -229,7 +231,7 @@ footer a{color:var(--muted)}
 @media (max-width:960px){
   .hero-grid{grid-template-columns:1fr;gap:56px}
   .hero-text{text-align:center}
-  .cta,.sns{justify-content:center}
+  .cta{justify-content:center}
   .steps{grid-template-columns:1fr;max-width:520px;margin:0 auto}
   .features{grid-template-columns:1fr}
   .feature.big{grid-row:auto;min-height:320px}
@@ -250,6 +252,8 @@ footer a{color:var(--muted)}
   .phone{width:264px;border-radius:44px}
   .screen{height:540px;border-radius:34px}
   .s-time{font-size:68px}
+  .foot-side{align-items:flex-start}
+  .foot-sns{margin:0 0 0 -10px}
 }
 @media (max-width:360px){
   .top nav a:first-child{display:none}
