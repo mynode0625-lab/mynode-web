@@ -14,16 +14,8 @@
   --serif:"AppleMyungjo","Nanum Myeongjo","Noto Serif KR",serif;
   --sans:"Pretendard Variable","Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
   --num:"Outfit","Pretendard Variable",sans-serif;
+  color-scheme:light;
 }
-@media (prefers-color-scheme:dark){:root{
-  --bg:#17140F;--bg2:#1E1A14;--surface:#221E18;--text:#F5EFE8;--sub:#C9BFB4;--muted:#A79C91;
-  --line:#3A332A;--tint:#F2A66B;--fill:#BC5A24;--fill-hover:#A64C1C;
-  --olive:#B5C2A6;--badge-bg:#2F3A2F;--on-badge:#CED4B8;--clay:#E0B08A;
-  --sky1:#17140F;--sky2:#2A1E15;--sky3:#3D2716;--sun:#B8673A;
-  --final-bg:#0F0D0A;
-  --shadow:0 30px 60px -20px rgba(0,0,0,.6),0 12px 24px -12px rgba(0,0,0,.4);
-}}
-
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -219,7 +211,6 @@ footer a{color:var(--muted)}
 .foot-sns a:hover{color:var(--tint);background:var(--line)}
 .foot-sns svg{width:20px;height:20px;fill:currentColor}
 .logo-mynode{height:15px;width:auto;margin-bottom:10px;mix-blend-mode:multiply}
-@media (prefers-color-scheme:dark){.logo-mynode{filter:invert(1);mix-blend-mode:screen}}
 
 /* 스크롤 등장 (스크립트가 돌 때만 숨긴다) */
 .reveal-on .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}

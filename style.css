@@ -4,11 +4,8 @@
   --card:#F6EDE3;--line:#EADFD3;--phone:#1F1B16;
   --serif:"AppleMyungjo","Nanum Myeongjo","Noto Serif KR",serif;
   --sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;
+  color-scheme:light;
 }
-@media (prefers-color-scheme:dark){:root{
-  --bg:#17140F;--bg2:#1E1A14;--text:#F5EFE8;--sub:#A79C91;--tint:#F2A66B;--tint-soft:#3A2A1E;
-  --card:#26211A;--line:#3A3229;--phone:#0E0C09;
-}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7;word-break:keep-all;-webkit-font-smoothing:antialiased}
@@ -22,7 +19,6 @@ a{color:var(--tint)}
 .top nav a{margin-left:18px;font-size:14px;color:var(--text);text-decoration:none;opacity:.8}
 .top nav a:hover{opacity:1;color:var(--tint)}
 .logo-mynode{height:20px;width:auto;mix-blend-mode:multiply}
-@media (prefers-color-scheme:dark){.logo-mynode{filter:invert(1);mix-blend-mode:screen}}
 .logo-daily{display:flex;align-items:center;gap:8px;color:var(--text);text-decoration:none;font-weight:800;font-size:18px}
 .logo-daily svg{width:30px;height:30px}
 
